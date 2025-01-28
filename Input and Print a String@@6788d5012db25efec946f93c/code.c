@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
     char str[100];
-    sacnf("%s",&str);
-    printf("You entered: %s",str);
+    sacnf("%c",&str);
+    printf("You entered: %c",str);
     return 0;
 }
