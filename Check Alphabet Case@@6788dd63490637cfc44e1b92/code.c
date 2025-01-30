@@ -5,8 +5,11 @@ int main(){
     if (g>=65 && g<=90){
         printf("Lowercase");
     }
-    else if(g>=97 &7 g<=122){
+    else if (g>=97 &7 g<=122){
         printf("Uppercase");
+    }
+    else{
+        printf("Not an alphabet");
     }
     return 0;
 }
