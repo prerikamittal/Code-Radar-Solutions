@@ -1,15 +1,16 @@
 #include <stdio.h>
 int main(){
-    float a,b,c;
-    scanf("%f%f%f",&a,&b,&c);
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
     if (a==b&&a==c){
         printf("Equilateral");
     }
-    else if (a!=b && a!=c && b!=c){
-        printf("Scalene");
+    
+    else if (a==b && a!=c && b!=c){
+        printf("Isoceles");
     }
     else{
-        printf("Isoceles");
+        printf("Scalene");
     }
     return 0;
 }
