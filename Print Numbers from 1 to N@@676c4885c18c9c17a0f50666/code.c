@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main(){
-    int a;
-    scanf("%d",&a);
-    for (a=1;a<6;a++){
+    int N;
+    scanf("%d",&N);
+    for (a=1;a<N;a++){
         printf("%d ", a);
     }
 }
