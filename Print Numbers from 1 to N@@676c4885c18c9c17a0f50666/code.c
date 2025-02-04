@@ -5,7 +5,7 @@ int main(){
     for (int a=1;a<=N;a++){
         printf("%d", a);
         if (a<N){
-            printf(" ")
+            printf(" ");
         }
     }
     return 0;
