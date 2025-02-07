@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    int var a:
+    int var a;
     scanf("%d",&a);
     switch (var){
         case 1:
