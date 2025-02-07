@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main(){
-    int var a;
+    int  a;
     scanf("%d",&a);
-    switch (var){
+    switch (a){
         case 1:
         printf("Monday");
         break;
