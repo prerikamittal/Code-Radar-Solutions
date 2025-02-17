@@ -1,0 +1,1 @@
+[{"index":40,"id":"67b0eb4a17930522cbe25a3c","title":"Output of printf with mixed increments","correctAnswer":"6 5 6","selectedOption":"6 5 6","isCorrect":true,"type":"MCQ"}]
