@@ -3,7 +3,7 @@ int main() {
     float temp;
     scanf("%f", &temp);
     if (temp <= 0) {
-        printf("Freezing or below freezing\n");
+        printf("Freezing \n");
     } else {
         printf("Above freezing\n");
     }
