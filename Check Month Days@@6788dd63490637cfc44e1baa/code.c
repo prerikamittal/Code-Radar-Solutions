@@ -10,16 +10,16 @@ int main() {
         case 8:
         case 10:
         case 12:
-            printf("31 days\n");
+            printf("31 \n");
             break;
         case 4:
         case 6:
         case 9:
         case 11:
-            printf("30 days\n");
+            printf("30 \n");
             break;
         case 2:
-            printf("28 days\n");
+            printf("28 \n");
             break;
         default:
             printf("Invalid month number\n");
