@@ -1,7 +1,16 @@
 #include <stdio.h>
-int main(){
-    int a;
-    scanf("%d",&a);
-    printf("%b",a);
+
+void decimalToBinary(int n) {
+    if (n > 1) {
+        decimalToBinary(n / 2);
+    }
+    printf("%d", n % 2);
+}
+
+int main() {
+    int num;
+    scanf("%d", &num);
+    decimalToBinary(num);
+    printf("\n");
     return 0;
 }
