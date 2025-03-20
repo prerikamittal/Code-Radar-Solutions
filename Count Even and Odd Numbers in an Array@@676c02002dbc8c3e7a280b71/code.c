@@ -13,7 +13,7 @@ int main(){
             ce+=1;
         }
         else{
-            c0+=1;
+            co+=1;
         }
     }
     printf("%d %d", ce,co);
