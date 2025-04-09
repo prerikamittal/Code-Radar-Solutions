@@ -30,7 +30,7 @@ int main() {
     if (n % 2 != 0) {
         median = arr[n / 2];
     } else {
-        median = (arr[(n - 1) / 2] + arr[n / 2]) / 2;
+        median = (arr[(n - 1) / 2] + arr[n / 2]) / 2.0;
     }
 
     printf("%f\n", median);
