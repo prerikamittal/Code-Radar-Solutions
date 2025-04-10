@@ -16,7 +16,7 @@ int main() {
         }
     }
     if (increasing || decreasing) {
-        printf("YEs\n");
+        printf("YES\n");
     } else {
         printf("NO\n");
     }
