@@ -4,30 +4,27 @@ int main() {
     int n, target;
     scanf("%d", &n);
     int arr[n];
+    int freq[100001] = {0}; // Adjust size based on expected input range
+
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
+        freq[arr[i]]++;
     }
     scanf("%d", &target);
 
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = i + 1; j < n; j++) {
-            if (arr[i] + arr[j] == target) {
-                int duplicate = 0;
-                for (int k = 0; k < i; k++) {
-                    for (int l = k + 1; l < n; l++) {
-                        if (arr[k] + arr[l] == target) {
-                            if ((arr[k] == arr[i] && arr[l] == arr[j]) || (arr[k] == arr[j] && arr[l] == arr[i])) {
-                                duplicate = 1;
-                                break;
-                            }
-                        }
-                    }
-                    if (duplicate) break;
-                }
-                if (!duplicate) {
-                    printf("%d %d\n", arr[i], arr[j]);
-                }
+    for (int i = 0; i < n; i++) {
+        int a = arr[i];
+        int b = target - a;
+
+        // To avoid repeating, we only consider the pair once and then mark it processed
+        if (freq[a] > 0 && freq[b] > 0) {
+            if (a == b && freq[a] >= 2) {
+                printf("%d %d\n", a, b);
+            } else if (a < b) {
+                printf("%d %d\n", a, b);
             }
+            freq[a] = 0;
+            freq[b] = 0;
         }
     }
 
