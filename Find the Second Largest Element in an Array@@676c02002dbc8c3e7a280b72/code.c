@@ -1,15 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int n, a[1000], max = -1, second = -1;
+    int n, a[1000];
     scanf("%d", &n);
 
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &a[i]);
+    for (int i = 0; i < n; i++) scanf("%d", &a[i]);
+
+    int max = a[0], second = -1;
+
+    for (int i = 1; i < n; i++) {
         if (a[i] > max) {
             second = max;
             max = a[i];
-        } else if (a[i] > second && a[i] != max) {
+        } else if (a[i] < max && (second == -1 || a[i] > second)) {
             second = a[i];
         }
     }
